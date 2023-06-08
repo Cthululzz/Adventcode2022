@@ -9,6 +9,20 @@ lista = [
     [10000]
 ]
 
-print(lista)
+# Sumar las calorias de cada elfo
+resultados = []
+for sublist in lista:
+    suma = sum(sublist)
+    resultados.append(suma)
+
+# Encontrar el mayor numero de calorias
+resultado_mayor = max(resultados)
 
 
+# elfo con mayor cantidad de calorias
+elfo_calorico = resultados.index(resultado_mayor) 
+
+# Mostrar los resultados de las operaciones
+print("Suma de calorias por elfo:", resultados)
+print("Resultado mayor de calorias por elfo:", resultado_mayor)
+print("elfo con mayor cantidad de calorias", elfo_calorico)
